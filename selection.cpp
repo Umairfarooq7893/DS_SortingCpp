@@ -13,15 +13,12 @@ void sort(int arr[] ,int n){
                 arr[min] = arr[i];
                 arr[i] = temp;
 
-
     }
-
     // printing
     for(int i = 0 ; i < n ;i++){
         cout<<arr[i]<<" ";
     }
 }
-
 int main(){
     int arr[] = {22,4,55,7,8,4,3,22};
     int n = sizeof(arr)/sizeof(arr[0]);
