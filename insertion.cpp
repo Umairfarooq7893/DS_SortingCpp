@@ -7,15 +7,15 @@ int main() {
 
     for(int i = 1; i < n; i++) {
         int key = arr[i];
-        int j = i - 1;
+        int previous = i - 1;
 
         // Shift elements greater than key
-        while(j >= 0 && arr[j] > key) {
-            arr[j + 1] = arr[j];
-            j--;
+        while(previous >= 0 && arr[previous] > key) {
+            arr[previous + 1] = arr[previous];  // peechai walai ko aagai wale jajha pa rakho
+            previous--;
         }
 
-        arr[j + 1] = key;
+        arr[previous + 1] = key;  // bez uper previous -- huwa ha in while loop
     }
 
     cout << "Sorted array: ";
